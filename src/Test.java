@@ -32,19 +32,19 @@ public class Test {
 
   public static boolean isValid(long nombre) {
     long temp = Math.abs(nombre);
-    int lastNumber = (int) (temp % 10);
+    long lastNumber = temp % 10; // opération afin de récupérer le dernier chiffre du nombre temp
     int compteur = 1;
     temp /= 10;
     while (temp > 0) {
-      int actualNumber = (int) (temp % 10);
+      long actualNumber = temp % 10;
       if (actualNumber == lastNumber) {
         compteur++;
         if (compteur > 9) {
           return false;
-        } else {
-          lastNumber = actualNumber;
-          compteur = 1;
         }
+      } else {
+        compteur = 1;
+        lastNumber = actualNumber;
       }
       temp /= 10;
     }
@@ -52,7 +52,7 @@ public class Test {
   }
 
   public static void main(String[] args) {
-    long nombre = getSuiteAudiActive(3366578);
+    long nombre = getSuiteAudiActive(9999999999L);
     System.out.println("Le résultat est :" + nombre);
   }
 
