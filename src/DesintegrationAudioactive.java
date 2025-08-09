@@ -11,7 +11,7 @@ public class DesintegrationAudioactive
 
   @Test
 	public void test_21_suit_11() {
-		assertEquals(21L, Test.valeurSuivante(11L));
+		assertEquals(21L, Audioactive.valeurSuivante(11L));
 	}
 
   @Test
