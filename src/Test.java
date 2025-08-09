@@ -1,6 +1,6 @@
 public class Test {
 
-  public static long getSuiteAudiActive(Long nombre) {
+  public static long getSuiteAudiActive(long nombre) {
     if (nombre == 0) {
       throw new IllegalArgumentException("le nombre doit être supérieur à 0");
     }
