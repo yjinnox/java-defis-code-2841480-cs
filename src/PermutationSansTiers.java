@@ -11,7 +11,7 @@ public class PermutationSansTiers {
     a ^= b;
     b ^= a;
     a ^= b;
-
+    
     assertEquals(99, b);
   }
 }
